@@ -1,14 +1,17 @@
 <template>
     <div>
+      <nav-menu></nav-menu>
       <router-view/>
     </div>
-  </template>
+</template>
 
-  <script>
-    export default {
-      name: 'Home'
-    }
-  </script>
+<script>
+import NavMenu from './common/NavMenu'
+export default {
+  name: 'Home',
+  components: {NavMenu}
+}
+</script>
 
 <style scoped>
 
