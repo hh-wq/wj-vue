@@ -37,7 +37,18 @@
 
 <script>
 export default {
-  name: 'SideMenu'
+  name: 'SideMenu',
+  data () {
+    return {
+      cid: ''
+    }
+  },
+  methods: {
+    handleSelect (index) {
+      this.cid = index
+      this.$emit('CategoryChange')
+    }
+  }
 }
 </script>
 
